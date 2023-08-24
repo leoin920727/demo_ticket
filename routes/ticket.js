@@ -3,9 +3,9 @@ var router = express.Router();
 
 async function sleep(timeCount) {
   var p = new Promise(function (resolve, reject) {
-      setTimeout(function () {
-          resolve();
-      }, timeCount)
+    setTimeout(function () {
+      resolve();
+    }, timeCount)
   });
   await p;
 }
